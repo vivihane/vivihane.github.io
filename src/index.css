@@ -51,6 +51,10 @@
 }
 
 #root {
+  --gb-pink-main: #ff69b4;
+  --gb-pink-light: #ff9ccc;
+  --gb-pink-dark: #c71585;
+  --font-retro: 'monospace';
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
