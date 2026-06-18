@@ -12,13 +12,21 @@ export default function GameBoy() {
       <div className="gameboy-screen">
         <h1>Vivi</h1>
 
-        <ul>
-          <li>▶ About me</li>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>Contact</li>
-        </ul>
+        <div className="gameboy-menu">
+          <button className="menu-btn active">
+            <span className="cursor">▶</span> About me
+          </button>
+          <button className="menu-btn">
+            <span className="cursor"></span> Projects
+          </button>
+          <button className="menu-btn">
+            <span className="cursor"></span> Skills
+          </button>
+          <button className="menu-btn">
+            <span className="cursor"></span> Contact
+          </button>
+        </div>
       </div>
     </div>
   );
-}
+}  
