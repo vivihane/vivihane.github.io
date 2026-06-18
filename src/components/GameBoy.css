@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.gameboy-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+}
+
+.gameboy-img { 
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gameboy-screen {
+  position: absolute;
+  top: 9%;
+  left: 15%;
+  width: 65%;
+  background: rgba(244, 244, 244, 0.9);
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
