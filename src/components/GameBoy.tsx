@@ -1,32 +1,18 @@
-import gameboy from "../assets/gameboy.jpg";
-import "./GameBoy.css";
+import { useGLTF } from "@react-three/drei";
+import type { ThreeElements } from "@react-three/fiber";
+//import gameBoyModel from "../assets/gameboy_challenge.glb?url";
+import gameBoyModel from "../assets/gameboy_advance_sp.glb?url";
 
-export default function GameBoy() {
+type GameBoyProps = ThreeElements["group"];
+
+export default function GameBoy(props: GameBoyProps) {
+  const { scene } = useGLTF(gameBoyModel);
+
   return (
-    <div className="gameboy-container">
-      <img 
-        src={gameboy}
-        className="gameboy-img"
-      />
-
-      <div className="gameboy-screen">
-        <h1>Vivi</h1>
-
-        <div className="gameboy-menu">
-          <button className="menu-btn active">
-            <span className="cursor">▶</span> About me
-          </button>
-          <button className="menu-btn">
-            <span className="cursor"></span> Projects
-          </button>
-          <button className="menu-btn">
-            <span className="cursor"></span> Skills
-          </button>
-          <button className="menu-btn">
-            <span className="cursor"></span> Contact
-          </button>
-        </div>
-      </div>
-    </div>
+    <group {...props} dispose={null}>
+      <primitive object={scene} />
+    </group>
   );
-}  
+}
+
+useGLTF.preload(gameBoyModel);
