@@ -1,7 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 import type { ThreeElements } from "@react-three/fiber";
-//import gameBoyModel from "../assets/gameboy_challenge.glb?url";
-import gameBoyModel from "../assets/gameboy_advance_sp.glb?url";
+// import gameBoyModel from "../../assets/gameboy_challenge.glb?url";
+import gameBoyModel from "../../assets/gameboy_advance_sp.glb?url";
 
 type GameBoyProps = ThreeElements["group"];
 

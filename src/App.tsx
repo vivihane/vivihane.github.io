@@ -1,8 +1,8 @@
 import { Suspense, lazy, useEffect, useState } from "react";
 import "./App.css";
-import LoadingContent from "./components/LoadingContent";
+import LoadingContent from "./components/Gameboy/LoadingContent";
 
-const GameBoyScene = lazy(() => import("./components/GameBoyScene"));
+const GameBoyScene = lazy(() => import("./components/Gameboy/GameBoyScene"));
 
 function App() {
   const [showConsole, setShowConsole] = useState(false);
